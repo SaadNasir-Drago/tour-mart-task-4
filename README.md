@@ -50,6 +50,7 @@ JWT_SECRET=your_jwt_secret_key
 
 Replace `your_password` with your PostgreSQL password and `your_jwt_secret_key` with a secure random string.
 
+<<<<<<< HEAD
 ## Step 5: Stop a Running Process on a Port (If Needed)
 If the application does not start due to a port conflict, you can stop the process occupying the port:
 
@@ -71,6 +72,8 @@ sudo lsof -i :3000
 sudo kill -9 <PID>
 
 sudo lsof -t -i :3000 | xargs sudo kill -9
+=======
+>>>>>>> master
 
 ## Step 6: Run the Application
 
@@ -80,7 +83,11 @@ Start the application in development mode:
 npm run start:dev
 ```
 
+<<<<<<< HEAD
 The application should now be running at `http://localhost:3000`.
 
 
 netstat -ano | findstr :<PORT>
+=======
+The application should now be running at `http://localhost:3000`.
+>>>>>>> master
